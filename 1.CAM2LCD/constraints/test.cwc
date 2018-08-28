@@ -1,0 +1,301 @@
+<chipwatcher project_name="test_camera" bit_file="test_camera.bit">
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="CSI_PCLK" polarity="posedge"/>
+		<config bram_type="" sample_depth="4096"/>
+		<signal_vec>
+			<trigger_nets>
+				<net name="B[0]"/>
+				<net name="B[1]"/>
+				<net name="B[2]"/>
+				<net name="B[3]"/>
+				<net name="B[4]"/>
+				<net name="B[5]"/>
+				<net name="B[6]"/>
+				<net name="B[7]"/>
+				<net name="G[0]"/>
+				<net name="G[1]"/>
+				<net name="G[2]"/>
+				<net name="G[3]"/>
+				<net name="G[4]"/>
+				<net name="G[5]"/>
+				<net name="G[6]"/>
+				<net name="G[7]"/>
+				<net name="R[0]"/>
+				<net name="R[1]"/>
+				<net name="R[2]"/>
+				<net name="R[3]"/>
+				<net name="R[4]"/>
+				<net name="R[5]"/>
+				<net name="R[6]"/>
+				<net name="R[7]"/>
+				<net name="fifo_di_r[0]"/>
+				<net name="fifo_di_r[1]"/>
+				<net name="fifo_di_r[2]"/>
+				<net name="fifo_di_r[3]"/>
+				<net name="fifo_di_r[4]"/>
+				<net name="fifo_di_r[5]"/>
+				<net name="fifo_di_r[6]"/>
+				<net name="fifo_di_r[7]"/>
+				<net name="fifo_do[0]"/>
+				<net name="fifo_do[11]"/>
+				<net name="fifo_do[12]"/>
+				<net name="fifo_do[13]"/>
+				<net name="fifo_do[14]"/>
+				<net name="fifo_do[15]"/>
+				<net name="fifo_do[1]"/>
+				<net name="fifo_do[2]"/>
+				<net name="fifo_do[3]"/>
+				<net name="fifo_do[4]"/>
+				<net name="fifo_do[5]"/>
+				<net name="fifo_do[6]"/>
+				<net name="fifo_do[7]"/>
+				<net name="fifo_do[8]"/>
+				<net name="fifo_do[9]"/>
+				<net name="fifo_empty"/>
+				<net name="fifo_full"/>
+				<net name="pixel_cnt[0]"/>
+				<net name="pixel_cnt[10]"/>
+				<net name="pixel_cnt[11]"/>
+				<net name="pixel_cnt[12]"/>
+				<net name="pixel_cnt[13]"/>
+				<net name="pixel_cnt[14]"/>
+				<net name="pixel_cnt[15]"/>
+				<net name="pixel_cnt[1]"/>
+				<net name="pixel_cnt[2]"/>
+				<net name="pixel_cnt[3]"/>
+				<net name="pixel_cnt[4]"/>
+				<net name="pixel_cnt[5]"/>
+				<net name="pixel_cnt[6]"/>
+				<net name="pixel_cnt[7]"/>
+				<net name="pixel_cnt[8]"/>
+				<net name="pixel_cnt[9]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[0]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[10]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[1]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[2]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[3]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[4]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[5]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[6]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[7]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[8]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[9]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[0]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[10]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[1]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[2]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[3]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[4]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[5]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[6]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[7]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[8]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[9]"/>
+			</trigger_nets>
+			<data_nets>
+				<net name="B[0]"/>
+				<net name="B[1]"/>
+				<net name="B[2]"/>
+				<net name="B[3]"/>
+				<net name="B[4]"/>
+				<net name="B[5]"/>
+				<net name="B[6]"/>
+				<net name="B[7]"/>
+				<net name="G[0]"/>
+				<net name="G[1]"/>
+				<net name="G[2]"/>
+				<net name="G[3]"/>
+				<net name="G[4]"/>
+				<net name="G[5]"/>
+				<net name="G[6]"/>
+				<net name="G[7]"/>
+				<net name="R[0]"/>
+				<net name="R[1]"/>
+				<net name="R[2]"/>
+				<net name="R[3]"/>
+				<net name="R[4]"/>
+				<net name="R[5]"/>
+				<net name="R[6]"/>
+				<net name="R[7]"/>
+				<net name="fifo_di_r[0]"/>
+				<net name="fifo_di_r[1]"/>
+				<net name="fifo_di_r[2]"/>
+				<net name="fifo_di_r[3]"/>
+				<net name="fifo_di_r[4]"/>
+				<net name="fifo_di_r[5]"/>
+				<net name="fifo_di_r[6]"/>
+				<net name="fifo_di_r[7]"/>
+				<net name="fifo_do[0]"/>
+				<net name="fifo_do[11]"/>
+				<net name="fifo_do[12]"/>
+				<net name="fifo_do[13]"/>
+				<net name="fifo_do[14]"/>
+				<net name="fifo_do[15]"/>
+				<net name="fifo_do[1]"/>
+				<net name="fifo_do[2]"/>
+				<net name="fifo_do[3]"/>
+				<net name="fifo_do[4]"/>
+				<net name="fifo_do[5]"/>
+				<net name="fifo_do[6]"/>
+				<net name="fifo_do[7]"/>
+				<net name="fifo_do[8]"/>
+				<net name="fifo_do[9]"/>
+				<net name="fifo_empty"/>
+				<net name="fifo_full"/>
+				<net name="pixel_cnt[0]"/>
+				<net name="pixel_cnt[10]"/>
+				<net name="pixel_cnt[11]"/>
+				<net name="pixel_cnt[12]"/>
+				<net name="pixel_cnt[13]"/>
+				<net name="pixel_cnt[14]"/>
+				<net name="pixel_cnt[15]"/>
+				<net name="pixel_cnt[1]"/>
+				<net name="pixel_cnt[2]"/>
+				<net name="pixel_cnt[3]"/>
+				<net name="pixel_cnt[4]"/>
+				<net name="pixel_cnt[5]"/>
+				<net name="pixel_cnt[6]"/>
+				<net name="pixel_cnt[7]"/>
+				<net name="pixel_cnt[8]"/>
+				<net name="pixel_cnt[9]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[0]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[10]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[1]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[2]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[3]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[4]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[5]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[6]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[7]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[8]"/>
+				<net name="u_lcd_sync/r_hsync_cnt[9]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[0]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[10]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[1]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[2]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[3]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[4]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[5]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[6]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[7]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[8]"/>
+				<net name="u_lcd_sync/r_vsync_cnt[9]"/>
+			</data_nets>
+			<watcher_nodes>
+				<bus name="u_lcd_sync/r_vsync_cnt" radix="bin" state="collapse">
+					<net name="u_lcd_sync/r_vsync_cnt[0]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[1]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[2]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[3]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[4]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[5]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[6]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[7]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[8]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[9]"/>
+					<net name="u_lcd_sync/r_vsync_cnt[10]"/>
+				</bus>
+				<bus name="u_lcd_sync/r_hsync_cnt" radix="bin" state="collapse">
+					<net name="u_lcd_sync/r_hsync_cnt[0]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[1]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[2]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[3]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[4]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[5]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[6]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[7]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[8]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[9]"/>
+					<net name="u_lcd_sync/r_hsync_cnt[10]"/>
+				</bus>
+				<bus name="pixel_cnt" radix="bin" state="collapse">
+					<net name="pixel_cnt[0]"/>
+					<net name="pixel_cnt[1]"/>
+					<net name="pixel_cnt[2]"/>
+					<net name="pixel_cnt[3]"/>
+					<net name="pixel_cnt[4]"/>
+					<net name="pixel_cnt[5]"/>
+					<net name="pixel_cnt[6]"/>
+					<net name="pixel_cnt[7]"/>
+					<net name="pixel_cnt[8]"/>
+					<net name="pixel_cnt[9]"/>
+					<net name="pixel_cnt[10]"/>
+					<net name="pixel_cnt[11]"/>
+					<net name="pixel_cnt[12]"/>
+					<net name="pixel_cnt[13]"/>
+					<net name="pixel_cnt[14]"/>
+					<net name="pixel_cnt[15]"/>
+				</bus>
+				<net name="fifo_full"/>
+				<net name="fifo_empty"/>
+				<bus name="fifo_do" radix="bin" state="collapse">
+					<net name="fifo_do[0]"/>
+					<net name="fifo_do[1]"/>
+					<net name="fifo_do[2]"/>
+					<net name="fifo_do[3]"/>
+					<net name="fifo_do[4]"/>
+					<net name="fifo_do[5]"/>
+					<net name="fifo_do[6]"/>
+					<net name="fifo_do[7]"/>
+					<net name="fifo_do[8]"/>
+					<net name="fifo_do[9]"/>
+					<net name="fifo_do[11]"/>
+					<net name="fifo_do[12]"/>
+					<net name="fifo_do[13]"/>
+					<net name="fifo_do[14]"/>
+					<net name="fifo_do[15]"/>
+				</bus>
+				<bus name="fifo_di_r" radix="bin" state="collapse">
+					<net name="fifo_di_r[0]"/>
+					<net name="fifo_di_r[1]"/>
+					<net name="fifo_di_r[2]"/>
+					<net name="fifo_di_r[3]"/>
+					<net name="fifo_di_r[4]"/>
+					<net name="fifo_di_r[5]"/>
+					<net name="fifo_di_r[6]"/>
+					<net name="fifo_di_r[7]"/>
+				</bus>
+				<bus name="R" radix="bin" state="collapse">
+					<net name="R[0]"/>
+					<net name="R[1]"/>
+					<net name="R[2]"/>
+					<net name="R[3]"/>
+					<net name="R[4]"/>
+					<net name="R[5]"/>
+					<net name="R[6]"/>
+					<net name="R[7]"/>
+				</bus>
+				<bus name="G" radix="bin" state="collapse">
+					<net name="G[0]"/>
+					<net name="G[1]"/>
+					<net name="G[2]"/>
+					<net name="G[3]"/>
+					<net name="G[4]"/>
+					<net name="G[5]"/>
+					<net name="G[6]"/>
+					<net name="G[7]"/>
+				</bus>
+				<bus name="B" radix="bin" state="collapse">
+					<net name="B[0]"/>
+					<net name="B[1]"/>
+					<net name="B[2]"/>
+					<net name="B[3]"/>
+					<net name="B[4]"/>
+					<net name="B[5]"/>
+					<net name="B[6]"/>
+					<net name="B[7]"/>
+				</bus>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				B[0] == any && B[1] == any && B[2] == any && B[3] == any && B[4] == any && B[5] == any && B[6] == any && B[7] == any && G[0] == any && G[1] == any && G[2] == any && G[3] == any && G[4] == any && G[5] == any && G[6] == any && G[7] == any && R[0] == any && R[1] == any && R[2] == any && R[3] == any && R[4] == any && R[5] == any && R[6] == any && R[7] == any && fifo_di_r[0] == any && fifo_di_r[1] == any && fifo_di_r[2] == any && fifo_di_r[3] == any && fifo_di_r[4] == any && fifo_di_r[5] == any && fifo_di_r[6] == any && fifo_di_r[7] == any && fifo_do[0] == any && fifo_do[11] == any && fifo_do[12] == any && fifo_do[13] == any && fifo_do[14] == any && fifo_do[15] == any && fifo_do[1] == any && fifo_do[2] == any && fifo_do[3] == any && fifo_do[4] == any && fifo_do[5] == any && fifo_do[6] == any && fifo_do[7] == any && fifo_do[8] == any && fifo_do[9] == any && fifo_empty == any && fifo_full == any && pixel_cnt[0] == any && pixel_cnt[10] == any && pixel_cnt[11] == any && pixel_cnt[12] == any && pixel_cnt[13] == any && pixel_cnt[14] == any && pixel_cnt[15] == any && pixel_cnt[1] == any && pixel_cnt[2] == any && pixel_cnt[3] == any && pixel_cnt[4] == any && pixel_cnt[5] == any && pixel_cnt[6] == any && pixel_cnt[7] == any && pixel_cnt[8] == any && pixel_cnt[9] == any && u_lcd_sync/r_hsync_cnt[0] == any && u_lcd_sync/r_hsync_cnt[10] == any && u_lcd_sync/r_hsync_cnt[1] == any && u_lcd_sync/r_hsync_cnt[2] == any && u_lcd_sync/r_hsync_cnt[3] == any && u_lcd_sync/r_hsync_cnt[4] == any && u_lcd_sync/r_hsync_cnt[5] == any && u_lcd_sync/r_hsync_cnt[6] == any && u_lcd_sync/r_hsync_cnt[7] == any && u_lcd_sync/r_hsync_cnt[8] == any && u_lcd_sync/r_hsync_cnt[9] == any && u_lcd_sync/r_vsync_cnt[0] == any && u_lcd_sync/r_vsync_cnt[10] == any && u_lcd_sync/r_vsync_cnt[1] == any && u_lcd_sync/r_vsync_cnt[2] == any && u_lcd_sync/r_vsync_cnt[3] == any && u_lcd_sync/r_vsync_cnt[4] == any && u_lcd_sync/r_vsync_cnt[5] == any && u_lcd_sync/r_vsync_cnt[6] == any && u_lcd_sync/r_vsync_cnt[7] == any && u_lcd_sync/r_vsync_cnt[8] == any && u_lcd_sync/r_vsync_cnt[9] == any
+			</condition>
+			<log>
+				<data name="log: 2018/ 7/25 12: 0:51" trigger_en="yes" trigger_pos="20" sample_num="64">
+					000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101010101010101010101010101010101010101010101010101010100000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111110110011001100110011001100110011001100110011001100110011001100110000111100001111000011110000111100001111000011110000111100001111000000001111111100000000111111110000000011111111000000001111111101111111111111110000000000000000111111111111111100000000000000001000000000000000111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111010101010101010101010101010101010101010101010101010101010101010000000000000000000000000000000000000000000000000000000000000000001100110011001100110011001100110011001100110011001100110011001101110000111100001111000011110000111100001111000011110000111100001111000000001111111100000000111111110000000011111111000000001111100011111111111111110000000000000000111111111111111100000000000001111111111111111111000000000000000000000000000000001111111111111000000000000000000011111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000
+				</data>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

@@ -1,0 +1,74 @@
+set_pin_assignment {CLK_IN} { LOCATION = K14; }		##24MHZ
+set_pin_assignment {RST_N} { LOCATION = K16; }		##USER_KEY
+
+#set_pin_assignment {CSI_D[0]} { LOCATION = P15; }	##unuse	
+#set_pin_assignment {CSI_D[1]} { LOCATION = P16; }	##unuse
+set_pin_assignment {CSI_D[0]} { LOCATION = L16; }
+set_pin_assignment {CSI_D[1]} { LOCATION = L14; }
+set_pin_assignment {CSI_D[2]} { LOCATION = M14; }
+set_pin_assignment {CSI_D[3]} { LOCATION = M16; }
+set_pin_assignment {CSI_D[4]} { LOCATION = M15; }
+set_pin_assignment {CSI_D[5]} { LOCATION = K15; }
+set_pin_assignment {CSI_D[6]} { LOCATION = H16; }
+set_pin_assignment {CSI_D[7]} { LOCATION = G16; }
+
+set_pin_assignment {CSI_PCLK} { LOCATION = K12; }
+set_pin_assignment {CSI_XCLK} { LOCATION = J12; }
+set_pin_assignment {CSI_HREF} { LOCATION = H15; }
+set_pin_assignment {CSI_VSYNC} { LOCATION = F15; }
+set_pin_assignment {CSI_PWDN} { LOCATION = G14; }
+set_pin_assignment {CSI_RST} { LOCATION = E15; }
+
+set_pin_assignment {CSI_SOIC} { LOCATION = D16; }
+set_pin_assignment {CSI_SOID} { LOCATION = D14; }
+
+set_pin_assignment {R[0]} { LOCATION = B2; }
+set_pin_assignment {R[1]} { LOCATION = A2; }
+set_pin_assignment {R[2]} { LOCATION = C3; }
+set_pin_assignment {R[3]} { LOCATION = C2; }
+set_pin_assignment {R[4]} { LOCATION = C1; }
+set_pin_assignment {R[5]} { LOCATION = E2; }
+set_pin_assignment {R[6]} { LOCATION = D1; }
+set_pin_assignment {R[7]} { LOCATION = E1; }
+
+set_pin_assignment {G[0]} { LOCATION = E3; }
+set_pin_assignment {G[1]} { LOCATION = E4; }
+set_pin_assignment {G[2]} { LOCATION = F1; }
+set_pin_assignment {G[3]} { LOCATION = F2; }
+set_pin_assignment {G[4]} { LOCATION = G1; }
+set_pin_assignment {G[5]} { LOCATION = G3; }
+set_pin_assignment {G[6]} { LOCATION = J4; }
+set_pin_assignment {G[7]} { LOCATION = J3; }
+
+set_pin_assignment {B[0]} { LOCATION = J1; }
+set_pin_assignment {B[1]} { LOCATION = K1; }
+set_pin_assignment {B[2]} { LOCATION = K2; }
+set_pin_assignment {B[3]} { LOCATION = K3; }
+set_pin_assignment {B[4]} { LOCATION = L3; }
+set_pin_assignment {B[5]} { LOCATION = M2; }
+set_pin_assignment {B[6]} { LOCATION = M1; }
+set_pin_assignment {B[7]} { LOCATION = N1; }
+
+set_pin_assignment {LCD_CLK} { LOCATION = L1};
+set_pin_assignment {LCD_HSYNC} { LOCATION = P1; }
+set_pin_assignment {LCD_VSYNC} { LOCATION = R1; }
+set_pin_assignment {LCD_DEN} { LOCATION = L4; }
+set_pin_assignment {LCD_PWM} { LOCATION = J16; }
+
+set_pin_assignment {TESTA} { LOCATION = A10; }
+set_pin_assignment {TESTB} { LOCATION = A9; }
+set_pin_assignment {TESTC} { LOCATION = B10; }
+set_pin_assignment {TESTD} { LOCATION = C9; }
+set_pin_assignment {TESTE} { LOCATION = B6; }
+set_pin_assignment {TESTF} { LOCATION = C5; }
+#set_pin_assignment {LED_R} { LOCATION = R3; }
+
+set_pin_assignment {OD[0]} { LOCATION = N9; } 		##T12_P, N9
+set_pin_assignment {OD[1]} { LOCATION = T8; }  		##T12_N, T8
+set_pin_assignment {OD[2]} { LOCATION = R7; } 		##T11_P, R7
+set_pin_assignment {OD[3]} { LOCATION = T7; } 		##T11_N, T7
+set_pin_assignment {OD[4]} { LOCATION = P5; } 		##T3_N, P5
+set_pin_assignment {OD[5]} { LOCATION = N5; } 		##T3_P, N5
+set_pin_assignment {OD[6]} { LOCATION = R2; } 		##R19_P, R2
+set_pin_assignment {OD[7]} { LOCATION = P2; } 		##R19_N, P2
+

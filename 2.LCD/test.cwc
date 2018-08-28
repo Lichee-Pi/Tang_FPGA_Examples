@@ -1,0 +1,122 @@
+<chipwatcher project_name="test_lcd" bit_file="test_lcd.bit">
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="LCD_CLK" polarity="posedge"/>
+		<config bram_type="" sample_depth="64"/>
+		<signal_vec>
+			<trigger_nets>
+				<net name="datout/timecnt[0]"/>
+				<net name="datout/timecnt[10]"/>
+				<net name="datout/timecnt[11]"/>
+				<net name="datout/timecnt[12]"/>
+				<net name="datout/timecnt[13]"/>
+				<net name="datout/timecnt[14]"/>
+				<net name="datout/timecnt[15]"/>
+				<net name="datout/timecnt[16]"/>
+				<net name="datout/timecnt[17]"/>
+				<net name="datout/timecnt[18]"/>
+				<net name="datout/timecnt[19]"/>
+				<net name="datout/timecnt[1]"/>
+				<net name="datout/timecnt[20]"/>
+				<net name="datout/timecnt[21]"/>
+				<net name="datout/timecnt[22]"/>
+				<net name="datout/timecnt[23]"/>
+				<net name="datout/timecnt[24]"/>
+				<net name="datout/timecnt[25]"/>
+				<net name="datout/timecnt[26]"/>
+				<net name="datout/timecnt[27]"/>
+				<net name="datout/timecnt[28]"/>
+				<net name="datout/timecnt[29]"/>
+				<net name="datout/timecnt[2]"/>
+				<net name="datout/timecnt[30]"/>
+				<net name="datout/timecnt[31]"/>
+				<net name="datout/timecnt[3]"/>
+				<net name="datout/timecnt[4]"/>
+				<net name="datout/timecnt[5]"/>
+				<net name="datout/timecnt[6]"/>
+				<net name="datout/timecnt[7]"/>
+				<net name="datout/timecnt[8]"/>
+				<net name="datout/timecnt[9]"/>
+			</trigger_nets>
+			<data_nets>
+				<net name="datout/timecnt[0]"/>
+				<net name="datout/timecnt[10]"/>
+				<net name="datout/timecnt[11]"/>
+				<net name="datout/timecnt[12]"/>
+				<net name="datout/timecnt[13]"/>
+				<net name="datout/timecnt[14]"/>
+				<net name="datout/timecnt[15]"/>
+				<net name="datout/timecnt[16]"/>
+				<net name="datout/timecnt[17]"/>
+				<net name="datout/timecnt[18]"/>
+				<net name="datout/timecnt[19]"/>
+				<net name="datout/timecnt[1]"/>
+				<net name="datout/timecnt[20]"/>
+				<net name="datout/timecnt[21]"/>
+				<net name="datout/timecnt[22]"/>
+				<net name="datout/timecnt[23]"/>
+				<net name="datout/timecnt[24]"/>
+				<net name="datout/timecnt[25]"/>
+				<net name="datout/timecnt[26]"/>
+				<net name="datout/timecnt[27]"/>
+				<net name="datout/timecnt[28]"/>
+				<net name="datout/timecnt[29]"/>
+				<net name="datout/timecnt[2]"/>
+				<net name="datout/timecnt[30]"/>
+				<net name="datout/timecnt[31]"/>
+				<net name="datout/timecnt[3]"/>
+				<net name="datout/timecnt[4]"/>
+				<net name="datout/timecnt[5]"/>
+				<net name="datout/timecnt[6]"/>
+				<net name="datout/timecnt[7]"/>
+				<net name="datout/timecnt[8]"/>
+				<net name="datout/timecnt[9]"/>
+			</data_nets>
+			<watcher_nodes>
+				<bus name="datout/timecnt" radix="bin" state="collapse">
+					<net name="datout/timecnt[0]"/>
+					<net name="datout/timecnt[1]"/>
+					<net name="datout/timecnt[2]"/>
+					<net name="datout/timecnt[3]"/>
+					<net name="datout/timecnt[4]"/>
+					<net name="datout/timecnt[5]"/>
+					<net name="datout/timecnt[6]"/>
+					<net name="datout/timecnt[7]"/>
+					<net name="datout/timecnt[8]"/>
+					<net name="datout/timecnt[9]"/>
+					<net name="datout/timecnt[10]"/>
+					<net name="datout/timecnt[11]"/>
+					<net name="datout/timecnt[12]"/>
+					<net name="datout/timecnt[13]"/>
+					<net name="datout/timecnt[14]"/>
+					<net name="datout/timecnt[15]"/>
+					<net name="datout/timecnt[16]"/>
+					<net name="datout/timecnt[17]"/>
+					<net name="datout/timecnt[18]"/>
+					<net name="datout/timecnt[19]"/>
+					<net name="datout/timecnt[20]"/>
+					<net name="datout/timecnt[21]"/>
+					<net name="datout/timecnt[22]"/>
+					<net name="datout/timecnt[23]"/>
+					<net name="datout/timecnt[24]"/>
+					<net name="datout/timecnt[25]"/>
+					<net name="datout/timecnt[26]"/>
+					<net name="datout/timecnt[27]"/>
+					<net name="datout/timecnt[28]"/>
+					<net name="datout/timecnt[29]"/>
+					<net name="datout/timecnt[30]"/>
+					<net name="datout/timecnt[31]"/>
+				</bus>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				datout/timecnt[0] == any && datout/timecnt[10] == any && datout/timecnt[11] == any && datout/timecnt[12] == any && datout/timecnt[13] == any && datout/timecnt[14] == any && datout/timecnt[15] == any && datout/timecnt[16] == any && datout/timecnt[17] == any && datout/timecnt[18] == any && datout/timecnt[19] == any && datout/timecnt[1] == any && datout/timecnt[20] == any && datout/timecnt[21] == any && datout/timecnt[22] == any && datout/timecnt[23] == any && datout/timecnt[24] == any && datout/timecnt[25] == any && datout/timecnt[26] == any && datout/timecnt[27] == any && datout/timecnt[28] == any && datout/timecnt[29] == any && datout/timecnt[2] == any && datout/timecnt[30] == any && datout/timecnt[31] == any && datout/timecnt[3] == any && datout/timecnt[4] == any && datout/timecnt[5] == any && datout/timecnt[6] == any && datout/timecnt[7] == any && datout/timecnt[8] == any && datout/timecnt[9] == any
+			</condition>
+			<log>
+				<data name="log: 2018/ 7/20 15: 0: 3" trigger_en="yes" trigger_pos="20" sample_num="64">
+					01010101010101010101010101010101010101010101010101010101010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111110011001100110011001100110011001100110011001100110011001100110000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000111100001111000011110000111100001111000011110000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111100000000111111110000000011111111000000001111111100111111111111110000000000000000111111111111111100000000000000001111111111111111000000000000000000000000000000001111111111111111110000000000000011111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+				</data>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

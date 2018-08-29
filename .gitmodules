@@ -1,0 +1,3 @@
+[submodule "3.SDRAM/anlogic_eg4s_sdram_controller"]
+	path = 3.SDRAM/anlogic_eg4s_sdram_controller
+	url = https://github.com/ReinForce-II/anlogic_eg4s_sdram_controller.git

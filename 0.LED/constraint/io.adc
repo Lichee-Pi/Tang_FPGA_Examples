@@ -3,5 +3,5 @@ set_pin_assignment {RST_N} { LOCATION = K16; }		##USER_KEY
 
 ## RGB LEDs, 3 pins
 set_pin_assignment {RGB_LED[0]} { LOCATION = R3;  }	##LED_R, R3
-set_pin_assignment {RGB_LED[1]} { LOCATION = J14;  }	##LED_G, J14
-set_pin_assignment {RGB_LED[2]} { LOCATION = P13;  }	##LED_B, P13
+set_pin_assignment {RGB_LED[1]} { LOCATION = P13;  }	##LED_G, J14
+set_pin_assignment {RGB_LED[2]} { LOCATION = J14;  }	##LED_B, P13

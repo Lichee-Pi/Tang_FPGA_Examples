@@ -85,7 +85,7 @@ module lcd_sync
 	assign lcd_vsync = (counter_vs >= (tvb+2) && counter_vs < (tv-5)) ? 0 : 1;
 	assign lcd_de = (counter_hs >= thb && counter_hs <= th && counter_vs >= tvb  && counter_vs < tv) ? 1 : 0;
  	assign hsync_cnt = counter_hs;
- 	assign vsync_cnt = counter_hs;
+ 	assign vsync_cnt = counter_vs;
 
 	assign img_ack = lcd_de &&
 	((counter_hs - thb) >= IMG_X && (counter_hs - thb) < (IMG_X + IMG_W)) && 

@@ -2,8 +2,8 @@
 module lcd_sync
 #(
  	//display image at pos
-	parameter IMG_W = 100,  //Í¼Æ¬ÐÐÏñËØµã¸öÊý
-	parameter IMG_H = 100,  //Í¼Æ¬³¡ÏñËØµã¸öÊý
+	parameter IMG_W = 100,  //å›¾ç‰‡è¡Œåƒç´ ç‚¹ä¸ªæ•°
+	parameter IMG_H = 100,  //å›¾ç‰‡åœºåƒç´ ç‚¹ä¸ªæ•°
 	parameter IMG_X = 0,
 	parameter IMG_Y = 0
 )
@@ -24,8 +24,8 @@ module lcd_sync
 	`define LCD_480800
 `ifdef LCD_480800
 	//800*480
-//	localparam TFT_H = 800;  //TFTÆÁÐÐÏñËØµã¸öÊý
-//	localparam TFT_V = 480;  //TFTÆÁ³¡ÏñËØµã¸öÊý
+//	localparam TFT_H = 800;  //TFTå±è¡Œåƒç´ ç‚¹ä¸ªæ•°
+//	localparam TFT_V = 480;  //TFTå±åœºåƒç´ ç‚¹ä¸ªæ•°
 	
 //	localparam thb = 256;
 //	localparam th = 1056 + thb;
@@ -33,8 +33,8 @@ module lcd_sync
 //	localparam tvb = 45;
 //	localparam tv = 525 + tvb;
 	//640*480
-	localparam TFT_H = 640;  //TFTÆÁÐÐÏñËØµã¸öÊý
-	localparam TFT_V = 480;  //TFTÆÁ³¡ÏñËØµã¸öÊý
+	localparam TFT_H = 640;  //TFTå±è¡Œåƒç´ ç‚¹ä¸ªæ•°
+	localparam TFT_V = 480;  //TFTå±åœºåƒç´ ç‚¹ä¸ªæ•°
 	
 	localparam thb = 160;
 	localparam th = 640 + thb;
@@ -43,8 +43,8 @@ module lcd_sync
 	localparam tv = 525 + tvb;
 `else
 	
-	localparam TFT_H = 480;  //TFTÆÁÐÐÏñËØµã¸öÊý
-	localparam TFT_V = 272;  //TFTÆÁ³¡ÏñËØµã¸öÊý
+	localparam TFT_H = 480;  //TFTå±è¡Œåƒç´ ç‚¹ä¸ªæ•°
+	localparam TFT_V = 272;  //TFTå±åœºåƒç´ ç‚¹ä¸ªæ•°
 	
 	localparam thb = 41;
 	localparam th = 533 + thb;
@@ -74,8 +74,8 @@ module lcd_sync
 	end	
 	end
 
-	reg [10:0]img_hbegin = 0;   //Í¼Æ¬×óÉÏ½ÇµÚÒ»¸öÏñËØµãÔÚTFTÆÁµÄÐÐÏò×ø±ê
-	reg [10:0]img_vbegin = 0;   //Í¼Æ¬×óÉÏ½ÇµÚÒ»¸öÏñËØµãÔÚTFTÆÁµÄ³¡Ïò×ø±ê
+	reg [10:0]img_hbegin = 0;   //å›¾ç‰‡å·¦ä¸Šè§’ç¬¬ä¸€ä¸ªåƒç´ ç‚¹åœ¨TFTå±çš„è¡Œå‘åæ ‡
+	reg [10:0]img_vbegin = 0;   //å›¾ç‰‡å·¦ä¸Šè§’ç¬¬ä¸€ä¸ªåƒç´ ç‚¹åœ¨TFTå±çš„åœºå‘åæ ‡
 
 	assign lcd_clk = (rest_n == 1) ? clk : 1'b0;
 	assign lcd_pwm = (rest_n == 1) ? 1'b1 : 1'b0;
@@ -83,14 +83,14 @@ module lcd_sync
 	assign lcd_vsync = (counter_vs >= (tvb+2) && counter_vs < (tv-5)) ? 0 : 1;
 	assign lcd_de = (counter_hs >= thb && counter_hs <= th && counter_vs >= tvb  && counter_vs < tv) ? 1 : 0;
  	assign hsync_cnt = counter_hs;
- 	assign vsync_cnt = counter_hs;
+ 	assign vsync_cnt = counter_vs;
 
 	assign img_ack = lcd_de &&
 	((counter_hs - thb) >= IMG_X && (counter_hs - thb) < (IMG_X + IMG_W)) && 
 	((counter_vs - tvb) >= IMG_Y && (counter_vs - tvb) < (IMG_Y + IMG_H))?1'b1:1'b0;
 	
- 	reg [15:0]read_addr;             //¶ÁÍ¼Æ¬Êý¾ÝromµØÖ·                  
-//    wire [15:0]img_data;       //¶Á³öÍ¼Æ¬Êý¾Ý
+ 	reg [15:0]read_addr;             //è¯»å›¾ç‰‡æ•°æ®romåœ°å€                  
+//    wire [15:0]img_data;       //è¯»å‡ºå›¾ç‰‡æ•°æ®
 /*
  	img mif_img
  	(

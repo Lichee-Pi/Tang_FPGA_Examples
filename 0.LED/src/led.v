@@ -1,8 +1,8 @@
 module led(
-		input wire CLK_IN,
-		input wire RST_N,
-		output wire [2:0]RGB_LED
-		);
+	input wire CLK_IN,
+	input wire RST_N,
+	output wire [2:0]RGB_LED
+);
 
 reg [15:0] cnt;
 wire[7:0] dutyR, dutyG, dutyB;

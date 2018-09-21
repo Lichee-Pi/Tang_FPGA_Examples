@@ -22,7 +22,7 @@ always @(posedge CLK_IN or negedge RST_N) begin
 		bln_clk <= ~bln_clk;
 	end
 	else begin
-		cnt	<= cnt + 1'b1;
+		cnt <= cnt + 1'b1;
 	end
 end
 
@@ -65,7 +65,7 @@ always @(negedge clk or negedge rst)
 	if(!rst)
 		duty <= DUTY;
 	else
-		duty = r ? duty + 1'b1 : duty - 1'b1;
+		duty <= r ? duty + 1'b1 : duty - 1'b1;
 
 endmodule
 
@@ -79,7 +79,7 @@ always @(posedge clk or negedge rst)
 	if(!rst)
 		cnt <= 1'b0;
 	else
-		cnt	<= cnt + 1'b1;
+		cnt <= cnt + 1'b1;
 
 assign pwm = cnt>=duty;
 

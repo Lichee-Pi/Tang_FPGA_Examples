@@ -5,7 +5,7 @@ module led
 		output wire [2:0]RGB_LED
 	);
 
-	parameter time1 = 24'd24_000_000;//¾§ÕñÎª24Mhz
+	parameter time1 = 25'd24_000_000;//Â¾Â§Ã•Ã±ÃŽÂª24Mhz
 
 	reg [2:0]rledout;
 	reg [23:0] count;

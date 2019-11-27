@@ -5,4 +5,4 @@
 #1. Camera to LCD
 
 ## IDE Download 
-[http://dl.sipeed.com/TANG/Primer/IDE/](http://dl.sipeed.com/TANG/Primer/IDE/)
+[http://dl.sipeed.com/TANG/Premier/IDE](http://dl.sipeed.com/TANG/Premier/IDE)
